@@ -1,0 +1,35 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="In-situ survey" class="action-bar"></ActionBar>
+    <StackLayout class="p-20">
+
+    <Label text="Please answer the following questions:" class="h2" textWrap="true" />
+    <ListView
+      height="100%"
+      separatorColor="transparent"
+      items="{{ questions }}"
+      >
+
+      <ListView.itemTemplate>
+        <StackLayout >
+            <label   
+         margin="10 10 0 10"
+         class="text-primary"
+         fontSize="18"
+         text="{{ title }}"
+        /> 
+
+        <GridLayout
+        columns="*, *, *, *, *" rows="auto"
+        margin="5 10"
+        padding="0"
+        text="{{ answer }}"
+        />
+    </StackLayout>
+
+     </ListView.itemTemplate>
+
+    </ListView>
+
+    </StackLayout>
+
+</Page>

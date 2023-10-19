@@ -1,0 +1,23 @@
+{
+  "name": "helloworld",
+  "main": "app/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@awarns/core": "^1.1.0",
+    "@awarns/geofencing": "^1.1.0",
+    "@awarns/geolocation": "^1.0.0",
+    "@awarns/human-activity": "^1.0.0",
+    "@awarns/notifications": "^1.0.2",
+    "@awarns/persistence": "^1.1.1",
+    "@nativescript/core": "~8.6.0",
+    "@nativescript/theme": "~3.0.2"
+  },
+  "devDependencies": {
+    "@nativescript/android": "8.6.2",
+    "@nativescript/preview-cli": "1.0.5",
+    "@nativescript/types": "~8.6.0",
+    "@nativescript/webpack": "~5.0.18",
+    "typescript": "~5.2.0"
+  }
+}

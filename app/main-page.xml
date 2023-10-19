@@ -1,0 +1,46 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title= "SoP-Scapes" />
+
+    <StackLayout height="100%" class="p-20">
+        <Label text="Welcome to SoP-Scapes"  marginBottom="20" fontWeight="700"
+        class="text-primary text-center"
+        fontSize="26"/>
+        <Label text="You will receive a real time survey on your visit to any of the places below:" class="h2 text-center" marginBottom="20" textWrap="true"/>
+    
+        <ListView
+        height="100%"
+        separatorColor="transparent"
+        items="{{ places }}"
+        itemTap="{{ onPlaceTap }}"
+
+      >
+      
+        <ListView.itemTemplate>
+
+            <GridLayout
+            height="280"
+            borderRadius="10"
+            class="bg-secondary"
+            rows="*, auto, auto"
+            columns="*"
+            margin="5 10 0 0"
+            padding="0"
+          >
+
+          <Image row="0" margin="10" stretch="aspectFill" src="{{ image }}"/>
+
+
+            <Label
+              row="1"
+              margin="0 10 0 10"
+              fontWeight="700"
+              class="text-primary text-center"
+              fontSize="18"
+              text="{{ title }}"
+            />  
+          </GridLayout>
+        </ListView.itemTemplate>
+      </ListView>
+    
+    </StackLayout>
+</Page>

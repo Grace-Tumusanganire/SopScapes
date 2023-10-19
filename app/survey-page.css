@@ -1,0 +1,25 @@
+.emoji-label {
+    font-size:24vw; /* Adjust the font size to fit your design */
+    text-align: center; /* Center-align the emoji in the grid cell */
+  }
+  
+  /* styles.css */
+  .emoji-label.emoji-label.emoji-red {
+    color: red;
+  }
+  
+  .emoji-label.emoji-label.emoji-orange {
+    color: orange;
+  }
+  
+  .emoji-label.emoji-label.emoji-yellow {
+    color: yellow;
+  }
+  
+  .emoji-label.emoji-label.emoji-lgree {
+    color: lightgreen;
+  }
+  
+  .emoji-label.emoji-label.emoji-green {
+    color: green;
+  }
